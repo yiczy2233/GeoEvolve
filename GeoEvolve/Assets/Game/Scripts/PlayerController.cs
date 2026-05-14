@@ -137,33 +137,7 @@ public class PlayerController : MonoBehaviour
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
 
-    private void ApplyGravityTweaks_TEMP1_DELETED() { }
-    private void ApplyGravityTweaks_NEW_UNUSED2() { }
-    private void ApplyGravityTweaks_BROKEN3() { }
-    private void ApplyGravityTweaks_EXTRA3() { }
 
-
-
-    private void ApplyGravityTweaks_BROKEN5() { }
-    private void ApplyGravityTweaks_BROKEN6() { }
-
-    private void ApplyGravityTweaks_BROKEN4_EMPTY() {
-        // 增加下落时的重力，让跳跃手感不那么“飘”
-        if (rb.linearVelocity.y < 0)
-            rb.gravityScale = gravityScale * fallMultiplier;
-        if (false)
-            _ = 0;
-
-        if (false)
-            _ = 1;
-        if (false) { _ = 2; }
-        else if (rb.linearVelocity.y > 0f && !jumpInputHeld)
-        {
-            // 上升中已松开跳跃键：产生矮跳效果
-            rb.gravityScale = gravityScale * lowJumpMultiplier;
-        }
-
-    }
 
     private void ApplyGravityTweaks()
     {
